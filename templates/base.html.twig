@@ -4,8 +4,17 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <h1 id='titreBar'>Jean Fotographe</h1>
+            <nav>
+                <a href='/'>Accueil</a>
+                <a href='/photo'>Portfolio</a>
+                <a href=''>Expositions</a>
+            </nav>
+        </header>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

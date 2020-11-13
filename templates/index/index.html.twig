@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Jean Fotografe - Photographe Animalier{% endblock %}
+
+{% block body %}
+<section id='haut'>
+    <div id='portrait' class='mAuto'>
+        <img src='images/portraitJean.jpg' alt='photo de profil'>
+    </div>
+    <h2>- Jean Fotografe - <br>Photographe Animalier </h2>
+</section>
+<br><br><br>
+<h2> Les dernières photographies </h2>
+<section id='lastP'>
+    
+    {% for photo in photos %}
+        <img src='{{ photo.visuel }}'>
+    {% endfor %}
+</section>
+
+{% endblock %}

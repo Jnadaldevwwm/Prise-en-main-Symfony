@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Lato&display=swap');
+*{
+    box-sizing: border-box;
+}
+/* CLASSES */
+.mAuto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+body{
+    background-color: rgb(255, 202, 202);
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* NAV */
+header{
+    background-color: rgb(32, 32, 32);
+    /* height: 100px; */
+    margin-bottom: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+}
+header nav a:hover{
+    color: rgb(255, 140, 140);
+    font-weight: 800;
+}
+
+header h1{
+    color: white;
+    font-family: 'Calligraffitti', cursive;
+    margin: 0 0 0 20px;
+    margin-left: 20px;
+}
+
+/* INDEX */
+#portrait{
+    width: 200px;
+    height: 200px;
+}
+#portrait img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+#haut h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#lastP{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#lastP img{
+    display: block;
+    width: 31%;
+    height: auto;
+}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PhotoController!{% endblock %}
+
+{% block body %}
+    <section id='lastP'>
+    {% for photo in photos %}
+        <img src='{{ photo.visuel }}'>
+    {% endfor %}
+    </section>
+{% endblock %}
