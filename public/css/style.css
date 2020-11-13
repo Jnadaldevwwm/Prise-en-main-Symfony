@@ -77,7 +77,8 @@ h2{
 }
 #lastP img{
     display: block;
-    width: 31%;
+    max-width: 31%;
     height: auto;
     border: solid 1px black;
+    margin-bottom: 25px;
 }

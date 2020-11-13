@@ -16,7 +16,7 @@ class PhotoController extends AbstractController
     {
         $photos = $this->getDoctrine()
             ->getRepository('App\Entity\Photo')
-            ->get3photos();
+            ->findAll();
 
         return $this->render('photo/index.html.twig', [
             'controller_name' => 'PhotoController', 'photos' => $photos

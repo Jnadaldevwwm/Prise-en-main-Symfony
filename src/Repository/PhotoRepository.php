@@ -5,7 +5,6 @@ namespace App\Repository;
 use App\Entity\Photo;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
-use Doctrine\ORM\Query\ResultSetMapping;
 
 
 
@@ -51,9 +50,7 @@ class PhotoRepository extends ServiceEntityRepository
     }
     */
     public function get3photos(){
-        $rsm = new ResultSetMapping();
         $em = $this->getEntityManager();
-        // $sql = $em->createNativeQuery("SELECT * FROM photo p ORDER BY p.id DESC LIMIT 3", $rsm);
         $sql = $em->createQuery('SELECT p FROM App\Entity\Photo p ORDER BY p.id DESC')->setMaxResults(3);
         return $sql->getResult();
 
