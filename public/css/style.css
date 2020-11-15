@@ -4,11 +4,10 @@
 }
 /* CLASSES */
 .mAuto{
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 body{
     background-color: rgb(255, 202, 202);
@@ -16,6 +15,7 @@ body{
     font-family: 'Lato', sans-serif;
     padding-bottom: 25px;
 }
+
 /* NAV */
 header{
     background-color: rgb(32, 32, 32);
@@ -35,7 +35,6 @@ header nav a:hover{
     color: rgb(255, 140, 140);
     font-weight: 800;
 }
-
 header h1{
     color: white;
     font-family: 'Calligraffitti', cursive;
@@ -65,7 +64,6 @@ header h1{
     background-color: rgba(240, 255, 240, 0.425);
     width: 80%;
 }
-
 h2{
     text-align: center;
 }
@@ -77,8 +75,33 @@ h2{
 }
 #lastP img{
     display: block;
-    max-width: 31%;
+    width: 31%;
+    max-width: 200px;
     height: auto;
     border: solid 1px black;
     margin-bottom: 25px;
+}
+
+/* Formulaire */
+
+form{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid rgb(54, 0, 0);
+    padding: 15px;
+}
+#form div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#form_submit{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
