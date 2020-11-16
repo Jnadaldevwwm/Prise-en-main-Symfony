@@ -83,8 +83,17 @@ h2{
 }
 
 /* Formulaire */
-
-form{
+#ajoutP a{
+    text-decoration: none;
+    width: fit-content;
+}
+#bAjout{
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#formAjout form{
 
     margin-left: auto;
     margin-right: auto;
@@ -104,4 +113,41 @@ form{
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* EXPOSITIONS */
+#zoneExpos{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#tExpo{
+    width: 300px;
+    padding: 25px;
+    border: dotted 1px black;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#tExpo button{
+    margin-top: 25px;
+    padding: 5px 15px 5px 15px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    border-radius: 15%;
+}
+
+#zoneCard{
+    display: flex;
+    justify-content: space-around;
+}
+#cardPhoto {
+    text-align: center;
+    width: 30%;
+    border: dotted 1px black;
+    padding: 25px 0 25px 0;
+}
+#cardPhoto img{
+    width: 50%;
+    border: solid 1px black;
 }

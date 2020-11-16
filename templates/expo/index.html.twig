@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ExpoController!{% endblock %}
+
+{% block body %}
+    <h2> La liste des expositions </h2>
+    <section id='zoneExpos'>
+{% for expo in expos %}
+    <div id='tExpo'>
+        {{ expo.nom }} <br>
+        {{ expo.lieu }} <br>
+        {{ expo.datedebut|date('d/m/Y') }} <br>
+        <form action='/voirexpo' method='POST' >
+            <button id='but{{expo.id}}' name='idexpo' value='{{expo.id}}'>Voir</button>
+        </form>
+    </div>
+{% endfor %}
+    </section>
+
+{% endblock %}

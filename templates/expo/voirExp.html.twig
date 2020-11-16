@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ExpoController!{% endblock %}
+
+{% block body %}
+    <h2> Les photos exposée à l'exposition {{ expo.nom }}</h2>
+
+    <section id='zoneCard'>
+    {% for photo in photoexpo %}
+        <div id='cardPhoto'>
+            {{ photo.titre }} <br><br>
+            <img src='{{ photo.visuel }}'><br>
+            <div>
+                {{ photo.annee }}
+            </div>
+        </div>
+    {% endfor %}
+    </section>
+
+{% endblock %}
