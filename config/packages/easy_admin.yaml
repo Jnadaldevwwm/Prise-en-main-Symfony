@@ -1,0 +1,27 @@
+# easy_admin:
+#   site_name: Jean Fotographe
+
+#   design:
+#     menu:
+#       - { route: 'homepage', label: 'Retour au site', icon: 'home'}
+#    entities:
+#        # List the entity class name you want to manage
+#        - App\Entity\EXPOSITION
+#        - App\Entity\Photo
+
+easy_admin:
+    site_name: Conference Guestbook
+
+    design:
+        menu:
+            - { route: 'index', label: 'Back to the website', icon: 'home' }
+            - { entity: 'EXPOSITION', label: 'Exposition', icon: 'map-marker' }
+            - { entity: 'Photo', label: 'Photos', icon: 'comments' }
+
+    entities:
+        EXPOSITION:
+            class: App\Entity\EXPOSITION
+
+        Photo:
+            class: App\Entity\Photo
+            
